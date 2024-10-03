@@ -1,0 +1,148 @@
+.padre {
+    background-color:coral;
+    padding: 10px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-template-areas:"header header header header"
+                        "menu menu menu menu"
+                        "cont1 cont2 cont3 pub1"
+                        "cont1 cont2 cont3 pub2"
+                        "redes1 redes2 redes3 redes4";
+}
+.padre .header {
+    background-color: bisque;
+    grid-area: header;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.padre .menu {
+    background-color: burlywood;
+    grid-area: menu;
+    display: flex;
+    flex-direction: rows;
+    justify-content: center;
+    align-items:center;
+    padding: 5px 15px ;
+}
+.padre .menu .boton {
+    background-color: aqua;
+    margin: 20px;
+    padding: 5px 15px ;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.padre .cont1 {
+    background-color: brown;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    grid-area: cont1;
+    justify-content: center;
+    text-align: center;
+}
+.padre .cont2 {
+    background-color: brown;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    grid-area: cont2;
+    justify-content: center;
+    text-align: center;
+}
+.padre .cont3 {
+    background-color: brown;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    grid-area: cont3;
+}
+.padre .pub1 {
+    background-color: rgb(230, 79, 79);
+    color: white;
+    padding: 5px 5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    grid-area: pub1;
+    justify-content: center;
+    text-align: center;
+}
+.padre .pub2 {
+    background-color: rgb(230, 79, 79);
+    color: white;
+    padding: 5px 5px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    grid-area: pub2;
+    justify-content: center;
+    text-align: center;
+}
+
+.padre .redes1 {
+    background-color: rgb(136, 56, 25);
+    margin: 20px;
+    grid-area: redes1;
+    padding: 5px 5px ;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.padre .redes2 {
+    background-color: rgb(136, 56, 25);
+    margin: 20px;
+    grid-area: redes2;
+    padding: 5px 5px ;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.padre .redes3 {
+    background-color: rgb(136, 56, 25);
+    margin: 20px;
+    grid-area: redes3;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.padre .redes4 {
+    background-color: rgb(136, 56, 25);
+    margin: 20px;
+    grid-area: redes4;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+@media screen and (max-width:750px) {
+    .padre {
+        background-color: black;
+        color: rgb(0, 0, 0);
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:"header header header header"
+                            "menu menu menu menu"
+                            "cont1 cont1 cont2 cont2"
+                            "cont3 cont3 cont3 cont3"
+                            "pub1 pub1 pub2 pub2"
+                            "redes1 redes2 redes3 redes4";
+
+    }
+}
+
+/*.contenedor {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+/*.contenedor {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente */
+
+/*stretch: Los elementos se estiran para llenar el contenedor.    
+flex-start: Los elementos se alinean al inicio del eje transversal.
+    flex-end: Los elementos se alinean al final del eje transversal.
+    center: Los elementos se alinean en el centro del eje transversal.
+    flex-direction: Define la dirección en la que se alinean los elementos flexibles.
+}*/
